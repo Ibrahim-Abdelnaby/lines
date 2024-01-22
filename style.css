@@ -11,9 +11,12 @@ html {
   box-sizing: border-box;
 }
 body {
+  font-family: "Tajawal", sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--gray-color);
+  direction: rtl;
+  font-size: 1rem;
 }
 h1,
 h2,
@@ -31,4 +34,100 @@ ul {
 a:link {
   text-decoration: none;
   color: var(--black-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+button {
+  font-size: 1rem;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 10rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  background-color: var(--cyan-color);
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn2 {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--cyan-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#hero {
+  height: 100vh;
+  background-image: url("images/hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero header {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#hero header .menu nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#hero .hero-info {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero .hero-info .heading {
+  position: relative;
+  width: fit-content;
+}
+#hero .hero-info .heading h1 {
+  color: var(--white-color);
+  font-size: 5rem;
+  position: relative;
+  z-index: 1;
+}
+#hero .hero-info .heading .underline::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--cyan-color);
+  height: 1rem;
+  width: 100%;
+  margin-top: -2.5rem;
+  z-index: -1;
+}
+#hero .hero-info .paragraph {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 3rem;
+  opacity: 0.6;
 }

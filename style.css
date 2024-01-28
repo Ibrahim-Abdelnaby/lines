@@ -41,6 +41,9 @@ a:visited {
 button {
   font-size: 1rem;
 }
+.paragraph-mob {
+  display: none;
+}
 .paragraph {
   color: var(--white-color);
   font-size: 1.5rem;
@@ -401,4 +404,118 @@ footer .left .flex img {
 }
 footer .left .flex a {
   color: var(--white-color);
+}
+
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden;
+  }
+  #hero {
+    background-image: url("images/hero-mob.jpg");
+    padding: 0 20px;
+  }
+  .menu nav {
+    display: none;
+  }
+  #hero .hero-info {
+    margin-top: 4rem;
+  }
+  #hero .hero-info .heading h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  #hero .hero-info .heading .underline {
+    font-size: 2.4rem;
+  }
+  #hero .hero-info .heading .underline::after {
+    margin-top: -1.6rem;
+    height: 0.6rem;
+  }
+  #hero .hero-info .paragraph {
+    display: none;
+  }
+  #hero .hero-info .paragraph-mob {
+    margin: 2rem 0 1.5rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    line-height: 2.5;
+  }
+  #about {
+    padding: 2rem 20px 3rem;
+    position: relative;
+    z-index: -1;
+    background-size: 25%;
+  }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+  }
+  #about .about .right {
+    display: none;
+  }
+  #about .about .left p {
+    font-size: 1.2rem;
+  }
+  #services {
+    background-image: url("images/services-mob.jpg");
+    background-size: cover;
+    background-position: top;
+    height: fit-content;
+    padding-bottom: 4rem;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #services .title .underline {
+    padding-top: 2rem;
+  }
+  #services .container .rows {
+    flex-direction: row;
+  }
+  #services .container .rows .row {
+    flex-direction: column;
+  }
+  #services .container .rows .row .group {
+    margin-top: 2rem;
+  }
+  #services .container .rows .row .group .box {
+    width: 80px;
+    height: 80px;
+  }
+  #services .container .rows .row .group .box img {
+    width: 35%;
+  }
+  #clients {
+    padding: 0 20px;
+  }
+  #clients .title .underline {
+    padding-top: 2rem;
+  }
+  #clients .container .logos .logo img {
+    width: 100%;
+  }
+  #contact {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    height: fit-content;
+    gap: 1rem;
+  }
+  #contact .left {
+    position: relative;
+    top: -15%;
+  }
+  #contact .left iframe {
+    height: 500px;
+  }
+  main footer {
+    flex-direction: column !important;
+    width: 100%;
+    padding: 2rem;
+    gap: 3rem;
+    overflow-x: hidden;
+  }
+  main footer .right {
+    width: calc(100% - 4rem);
+  }
 }

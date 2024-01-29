@@ -408,24 +408,31 @@ footer .left .flex a {
 
 @media (max-width: 575.98px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   #hero {
     background-image: url("images/hero-mob.jpg");
     padding: 0 20px;
+    overflow: hidden !important;
   }
-  .menu nav {
+  #hero .menu nav {
     display: none;
+  }
+  #hero .menu button {
+    font-size: 0.9rem;
   }
   #hero .hero-info {
     margin-top: 4rem;
   }
   #hero .hero-info .heading h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  #hero .hero-info .btns button {
+    font-size: 0.9rem;
   }
   #hero .hero-info .heading .underline {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   #hero .hero-info .heading .underline::after {
     margin-top: -1.6rem;
@@ -438,7 +445,7 @@ footer .left .flex a {
     margin: 2rem 0 1.5rem;
     display: block;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white-color);
     line-height: 2.5;
   }
@@ -447,6 +454,7 @@ footer .left .flex a {
     position: relative;
     z-index: -1;
     background-size: 25%;
+    overflow-x: hidden !important;
   }
   #about .about {
     display: flex;
@@ -466,6 +474,7 @@ footer .left .flex a {
     padding-bottom: 4rem;
     padding-right: 20px;
     padding-left: 20px;
+    overflow-x: hidden !important;
   }
   #services .title .underline {
     padding-top: 2rem;
@@ -488,6 +497,7 @@ footer .left .flex a {
   }
   #clients {
     padding: 0 20px;
+    overflow-x: hidden;
   }
   #clients .title .underline {
     padding-top: 2rem;
@@ -500,6 +510,7 @@ footer .left .flex a {
     padding: 0 20px;
     height: fit-content;
     gap: 1rem;
+    overflow-x: hidden !important;
   }
   #contact .left {
     position: relative;
@@ -513,7 +524,7 @@ footer .left .flex a {
     width: 100%;
     padding: 2rem;
     gap: 3rem;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   main footer .right {
     width: calc(100% - 4rem);

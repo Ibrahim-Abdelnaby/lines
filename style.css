@@ -420,16 +420,19 @@ footer .left .flex a {
   }
   #hero .menu button {
     font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
   }
   #hero .hero-info {
     margin-top: 4rem;
   }
   #hero .hero-info .heading h1 {
-    text-align: center;
+    text-align: right;
     font-size: 2rem;
   }
   #hero .hero-info .btns button {
     font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 100%;
   }
   #hero .hero-info .heading .underline {
     font-size: 2rem;
@@ -444,8 +447,8 @@ footer .left .flex a {
   #hero .hero-info .paragraph-mob {
     margin: 2rem 0 1.5rem;
     display: block;
-    text-align: center;
-    font-size: 1rem;
+    text-align: right;
+    font-size: 0.9rem;
     color: var(--white-color);
     line-height: 2.5;
   }
@@ -510,7 +513,7 @@ footer .left .flex a {
     padding: 0 20px;
     height: fit-content;
     gap: 1rem;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
   }
   #contact .left {
     position: relative;
@@ -521,7 +524,7 @@ footer .left .flex a {
   }
   main footer {
     flex-direction: column !important;
-    width: 100%;
+    width: fit-content;
     padding: 2rem;
     gap: 3rem;
     overflow-x: hidden !important;

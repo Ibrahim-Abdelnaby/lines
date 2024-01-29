@@ -426,7 +426,7 @@ footer .left .flex a {
     margin-top: 4rem;
   }
   #hero .hero-info .heading h1 {
-    text-align: right;
+    text-align: right !important;
     font-size: 2rem;
   }
   #hero .hero-info .btns button {
@@ -447,7 +447,7 @@ footer .left .flex a {
   #hero .hero-info .paragraph-mob {
     margin: 2rem 0 1.5rem;
     display: block;
-    text-align: right;
+    text-align: right !important;
     font-size: 0.9rem;
     color: var(--white-color);
     line-height: 2.5;
@@ -524,7 +524,7 @@ footer .left .flex a {
   }
   main footer {
     flex-direction: column !important;
-    width: fit-content;
+    width: fit-content !important;
     padding: 2rem;
     gap: 3rem;
     overflow-x: hidden !important;

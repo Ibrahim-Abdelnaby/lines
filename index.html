@@ -28,11 +28,11 @@
           <div class="menu">
             <nav>
               <ul>
-                <li><a href="#">خدماتنا</a></li>
-                <li><a href="#">من نحن</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#about">من نحن</a></li>
               </ul>
             </nav>
-            <button class="btn">تواصل معنا</button>
+            <a href="#contact" class="btn w-href">تواصل معنا</a>
           </div>
         </header>
 
@@ -246,47 +246,82 @@
             <h2 class="underline">تواصل معنا</h2>
           </div>
 
-          <form action="">
+          <form method="post" name="google-sheet">
             <div class="name-box">
-              <label for="">الأسم</label>
+              <label for="client-name">الاسم</label>
               <br />
-              <input type="text" />
+              <input id="client-name" type="text" name="client-name" />
             </div>
 
             <div class="email-box">
-              <label for="">البريد الالكتروني</label>
+              <label for="client-email">البريد الالكتروني</label>
               <br />
-              <input type="email" />
+              <input id="client-email" type="email" name="client-email" />
             </div>
 
             <div class="phone-box">
-              <label for="">رقم الجوال</label>
+              <label for="client-phone">رقم الجوال</label>
               <br />
-              <input type="text" />
+              <input id="client-phone" type="text" name="client-phone" />
             </div>
 
             <div class="service-box">
-              <label for="">الموضوع</label>
+              <label for="client-service">الموضوع</label>
               <br />
-              <select>
-                <option value="branding">
+              <select id="client-service" name="client-service">
+                <option value="اختار نوع الخدمة:">اختار نوع الخدمة:</option>
+                <option value="إختيار الاسم التجاري وإنشاء العلامة التجارية">
                   إختيار الاسم التجاري وإنشاء العلامة التجارية
                 </option>
-                <option value="branding">تصميم الهوية البصرية</option>
-                <option value="branding">إدارة الحسابات ومنصات التواصل</option>
-                <option value="marketing">صناعة المحتوي</option>
-                <option value="marketing">إنشاء الحملات الاعلانية</option>
-                <option value="marketing">بناء المواقع الإلكترونية</option>
+                <option value="تصميم الهوية البصرية">
+                  تصميم الهوية البصرية
+                </option>
+                <option value="إدارة الحسابات ومنصات التواصل">
+                  إدارة الحسابات ومنصات التواصل
+                </option>
+                <option value="صناعة المحتوي">صناعة المحتوي</option>
+                <option value="إنشاء الحملات الاعلانية">
+                  إنشاء الحملات الاعلانية
+                </option>
+                <option value="بناء المواقع الإلكترونية">
+                  بناء المواقع الإلكترونية
+                </option>
+                <option value="مصادقة محركات البحث SEO">
+                  مصادقة محركات البحث SEO
+                </option>
+                <option value="ورش عمل وبرامج تدريب واستشارات">
+                  ورش عمل وبرامج تدريب واستشارات
+                </option>
+                <option value="إدارة الأحداث والفعاليات">
+                  إدارة الأحداث والفعاليات
+                </option>
+                <option value="تصميم وتنفيذ المعارض">
+                  تصميم وتنفيذ المعارض
+                </option>
+                <option value="أنظمة الصوت والإضاءة">
+                  أنظمة الصوت والإضاءة
+                </option>
+                <option value="تصميم وتنفيذ المسارح">
+                  تصميم وتنفيذ المسارح
+                </option>
               </select>
             </div>
 
             <div class="message-box">
-              <label for="">رسالتك</label>
+              <label for="client-message">رسالتك</label>
               <br />
-              <textarea></textarea>
+              <textarea id="client-message" name="client-message"></textarea>
             </div>
 
-            <button class="btn extend" type="submit">إرسال</button>
+            <button
+              class="btn extend"
+              type="submit"
+              name="Submit"
+              id="submitbtn"
+            >
+              إرسال
+            </button>
+            <input type="reset" id="selfclick" value="reset" hidden />
           </form>
         </div>
 
@@ -326,10 +361,15 @@
 
         <div class="middle">
           <div class="title">
-            <h3>خدمات<span>ن</span>ا</h3>
+            <!-- <h3>خدمات<span>ـن</span>ا</h3> -->
+            <img
+              src="images/5adamatna.svg"
+              alt=""
+              style="position: relative; top: 20px"
+            />
           </div>
 
-          <div class="services">
+          <div class="services" style="position: relative; top: 20px">
             <p>إدارة منصات التواصل الاجتماعي</p>
             <p>الحملات التسويقية</p>
             <p>صناعة المحتوى</p>
@@ -345,7 +385,7 @@
           </div>
           <div class="flex">
             <img src="images/phone.svg" alt="" />
-            <a href="#">+966 543342611</a>
+            <a href="#" style="direction: ltr">050 288 4150</a>
           </div>
           <div class="flex">
             <img src="images/email.svg" alt="" />
@@ -358,5 +398,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>

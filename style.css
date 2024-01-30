@@ -38,6 +38,15 @@ a:visited {
   font-size: 1.2rem;
   font-weight: 600;
 }
+select,
+option,
+#client-message {
+  font-family: "Cairo", sans-serif !important;
+  font-size: 0.9rem;
+}
+.w-href {
+  color: var(--white-color) !important;
+}
 button {
   font-size: 1rem;
 }
